@@ -1,1 +1,41 @@
-<p>lista-escolas works!</p>
+<header>
+  <div class="header">
+    <div class="header-container">
+      <div class="header-container_welcome">Consulta de escolas</div>
+    </div>
+  </div>
+</header>
+
+<div>
+  <button
+    class="add-button_fixed"
+    mat-fab
+    color="secondary"
+    aria-label="Adicionar produto"
+    (click)="openDialog(null)"
+  >
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
+
+<div class="table">
+  <table mat-table #table [dataSource]="escolas" class="mat-elevation-z8">
+    <ng-container matColumnDef="nome">
+      <th class="table-header" mat-header-cell *matHeaderCellDef>Nome</th>
+      <td mat-cell *matCellDef="let escola">{{ escola.nome }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="bairro">
+      <th class="table-header" mat-header-cell *matHeaderCellDef>Bairro</th>
+      <td mat-cell *matCellDef="let escola">{{ escola.bairro }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="tipo">
+      <th class="table-header" mat-header-cell *matHeaderCellDef>Tipo</th>
+      <td mat-cell *matCellDef="let escola">{{ escola.tipo }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>

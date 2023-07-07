@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>Cadastrar uma nova escola</h1>
+<div mat-dialog-content>
+  <mat-form-field class="modal-input">
+    <mat-label>Nome da escola</mat-label>
+    <input matInput [(ngModel)]="data.nome" />
+  </mat-form-field>
+  <mat-form-field class="modal-input">
+    <mat-label>Bairro</mat-label>
+    <input matInput [(ngModel)]="data.bairro" />
+  </mat-form-field>
+
+  <mat-form-field class="modal-input">
+    <mat-label>Tipo</mat-label>
+    <input matInput [(ngModel)]="data.tipo" />
+  </mat-form-field>
+</div>
+<div class="modal-button_container" mat-dialog-actions>
+  <button mat-button class="cancel" (click)="onCancel()">Cancelar</button>
+  <button mat-button class="button" [mat-dialog-close]="data" cdkFocusInitial>
+    Salvar
+  </button>
+</div>

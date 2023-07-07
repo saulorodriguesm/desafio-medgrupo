@@ -1,0 +1,30 @@
+.header {
+  background-color: #2596be;
+  display: flex;
+  justify-content: center;
+  .header-container {
+    width: 70%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    .header-container_welcome {
+      margin-left: 10px;
+      font-size: 20px;
+      font-weight: lighter;
+    }
+  }
+}
+.add-button_fixed {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+.table {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
