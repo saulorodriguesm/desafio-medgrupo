@@ -13,7 +13,9 @@ export class EscolasService {
   consultarEscolas(): Observable<Escolas[]> {
     return this._httpClient.get<Escolas[]>(API_PATH, {});
   }
-
+  atualizarEscola(escola: Escolas): Observable<Escolas> {
+    return this._httpClient.put<Escolas>(API_PATH, escola);
+  }
   adicionarEscola(escola: Escolas): Observable<Escolas> {
     return this._httpClient.post<Escolas>(API_PATH, escola);
   }
