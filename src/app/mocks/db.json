@@ -29,6 +29,12 @@
       "nome": "Escola 5",
       "bairro": "Bairro das Flores",
       "tipo": "Ensino Fundamental"
+    },
+    {
+      "id": 6,
+      "nome": "Escola Adicionada",
+      "bairro": "Alvinopolis",
+      "tipo": "Ensino Fundamental"
     }
   ]
 }

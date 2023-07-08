@@ -22,7 +22,12 @@ export class ListaEscolasComponent {
     });
   }
   escolas: Escolas[] = [];
-  displayedColumns: string[] = ['nome', 'bairro', 'tipo'];
+  displayedColumns: string[] = ['nome', 'bairro', 'tipo', 'actions'];
+
+  adicionarEscola(escola: Escolas) {}
+  atualizarEscola(escola: Escolas) {}
+  excluirEscola(id: string) {}
+
   openDialog(escolas: Escolas | null) {
     const dialogRef = this.dialog.open(DialogComponent, {
       width: '450px',
