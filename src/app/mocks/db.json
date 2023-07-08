@@ -1,40 +1,40 @@
 {
   "escolas": [
     {
-      "id": 1,
       "nome": "Escola 1",
-      "bairro": "Bairro Legal",
-      "tipo": "Ensino Médio"
+      "bairro": "Florestal",
+      "tipo": "Ensino Médio",
+      "id": 1
     },
     {
-      "id": 2,
-      "nome": "Escola 2",
-      "bairro": "Bairro do Riacho",
-      "tipo": "Ensino Fundamental"
+      "nome": "Escola Tecnica",
+      "bairro": "Centro",
+      "tipo": "Ensino Tecnico",
+      "id": 2
     },
     {
-      "id": 3,
-      "nome": "Escola 3",
-      "bairro": "Bairro dos Coqueiros",
-      "tipo": "Ensino Fundamental"
+      "nome": "Escola Gabriel da Silva",
+      "bairro": "Bairro do Portão",
+      "tipo": "Ensino Fundamental",
+      "id": 3
     },
     {
-      "id": 4,
-      "nome": "Escola 4",
-      "bairro": "Bairro Central",
-      "tipo": "Ensino Médio"
+      "nome": "Escola Jose Alvim",
+      "bairro": "Centro",
+      "tipo": "Ensino Médio",
+      "id": 4
     },
     {
-      "id": 5,
-      "nome": "Escola 5",
-      "bairro": "Bairro das Flores",
-      "tipo": "Ensino Fundamental"
+      "nome": "Lobinho",
+      "bairro": "Imperial",
+      "tipo": "Ensino Fundamental",
+      "id": 5
     },
     {
-      "id": 6,
-      "nome": "Escola Adicionada",
+      "nome": "Escola Aguiar Peçanha",
       "bairro": "Alvinopolis",
-      "tipo": "Ensino Fundamental"
+      "tipo": "Ensino Fundamental",
+      "id": 6
     }
   ]
 }

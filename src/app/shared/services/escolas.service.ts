@@ -17,6 +17,13 @@ export class EscolasService {
     return this._httpClient.put<Escolas>(API_PATH, escola);
   }
   adicionarEscola(escola: Escolas): Observable<Escolas> {
-    return this._httpClient.post<Escolas>(API_PATH, escola);
+    return this._httpClient.post<Escolas>(API_PATH, {
+      nome: escola.nome,
+      bairro: escola.bairro,
+      tipo: escola.tipo,
+    });
+  }
+  excluirEscola(id: string) {
+    return this._httpClient.delete(`${API_PATH}${id}`);
   }
 }

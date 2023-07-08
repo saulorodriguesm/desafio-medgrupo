@@ -24,9 +24,14 @@ export class ListaEscolasComponent {
   escolas: Escolas[] = [];
   displayedColumns: string[] = ['nome', 'bairro', 'tipo', 'actions'];
 
-  adicionarEscola(escola: Escolas) {}
-  atualizarEscola(escola: Escolas) {}
-  excluirEscola(id: string) {}
+  atualizarEscola(escola: Escolas) {
+    this.openDialog(escola);
+  }
+  excluirEscola(id: string) {
+    this._escolasService.excluirEscola(id).subscribe(() => {
+      this.escolas = this.escolas.filter((p) => p.id != id);
+    });
+  }
 
   openDialog(escolas: Escolas | null) {
     const dialogRef = this.dialog.open(DialogComponent, {
@@ -35,7 +40,7 @@ export class ListaEscolasComponent {
         escolas != null
           ? escolas
           : {
-              id: 0,
+              id: '',
               nome: '',
               bairro: '',
               tipo: '',
@@ -43,7 +48,7 @@ export class ListaEscolasComponent {
     });
 
     dialogRef.afterClosed().subscribe((result) => {
-      if (result !== undefined) {
+      if (result !== '') {
         if (this.escolas.map((p) => p.id).includes(result.id)) {
           this._escolasService.atualizarEscola(result).subscribe((data) => {
             const index = this.escolas.findIndex((p) => p.id === data.id);

@@ -1,5 +1,5 @@
 export interface Escolas {
-  id: number;
+  id: string;
   nome: string;
   bairro: string;
   tipo: string;
