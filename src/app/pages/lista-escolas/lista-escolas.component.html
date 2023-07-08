@@ -38,11 +38,7 @@
     <ng-container matColumnDef="actions">
       <th class="table-header" mat-header-cell *matHeaderCellDef>Ações</th>
       <td mat-cell *matCellDef="let escola">
-        <button
-          mat-icon-button
-          (click)="atualizarEscola(escola)"
-          color="basic"
-        >
+        <button mat-icon-button (click)="atualizarEscola(escola)" color="basic">
           <mat-icon> edit</mat-icon>
         </button>
         <button

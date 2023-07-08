@@ -11,6 +11,16 @@ Optei por não inventar a moda e seguir a organização que utilizavamos na minh
 
 ---
 
+### Idiomas utilizados 
+Para mostrar versatilidade, optei por manter o nome dos arquivos em português conforme utilizavamos no Itaú (isso também dependerá muito do padrão de projeto definido pelo time), e os commits coloquei em inglês usando uma estrutura que gosto de `feat/change/fix(contexto): descrição`.
+
+---
+
+### Pré-processador CSS
+Utilizei o SASS por opção de vivência e gosto pessoal, cogitei utilizar o Tailwind mas quando lembrei já tinha feito boa parte da estilização. 
+
+---
+
 ### Libs utilizadas
 
 #### Angular Material
@@ -24,6 +34,8 @@ Também utilizei o popular RxJS para chamar o Observable, que auxiliou nas minha
 #### Json-Server
 
 Para criar uma API falsa, criei um arquivo `db.json` e utilizei o json-server para hospedar esse mock em uma URL localhost para que fosse possível simular os métodos GET, POST e PUT.
+
+---
 
 #### Rodando o projeto local
 
