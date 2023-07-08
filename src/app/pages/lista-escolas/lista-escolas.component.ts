@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from 'src/app/shared/components/dialog/dialog.component';
 import { EscolasService } from 'src/app/shared/services/escolas.service';
 import { MatTable } from '@angular/material/table';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lista-escolas',
@@ -15,7 +16,8 @@ export class ListaEscolasComponent {
   table!: MatTable<any>;
   constructor(
     private _escolasService: EscolasService,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private router: Router
   ) {
     this._escolasService.consultarEscolas().subscribe((escolas) => {
       this.escolas = escolas;
@@ -32,7 +34,9 @@ export class ListaEscolasComponent {
       this.escolas = this.escolas.filter((p) => p.id != id);
     });
   }
-
+  voltarHome() {
+    this.router.navigate(['/bem-vindo']);
+  }
   openDialog(escolas: Escolas | null) {
     const dialogRef = this.dialog.open(DialogComponent, {
       width: '450px',

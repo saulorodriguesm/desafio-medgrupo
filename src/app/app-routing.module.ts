@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListaEscolasComponent } from './pages/lista-escolas/lista-escolas.component';
+import { BemVindoComponent } from './pages/bem-vindo/bem-vindo.component';
 
 const routes: Routes = [
   {
@@ -8,8 +9,12 @@ const routes: Routes = [
     component: ListaEscolasComponent,
   },
   {
+    path: 'bem-vindo',
+    component: BemVindoComponent,
+  },
+  {
     path: '**',
-    redirectTo: 'lista-escolas',
+    redirectTo: 'bem-vindo',
   },
 ];
 

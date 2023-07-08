@@ -1,12 +1,6 @@
 {
   "escolas": [
     {
-      "nome": "Escola 1",
-      "bairro": "Florestal",
-      "tipo": "Ensino Médio",
-      "id": 1
-    },
-    {
       "nome": "Escola Tecnica",
       "bairro": "Centro",
       "tipo": "Ensino Tecnico",

@@ -15,9 +15,15 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
+import { BemVindoComponent } from './pages/bem-vindo/bem-vindo.component';
 
 @NgModule({
-  declarations: [AppComponent, ListaEscolasComponent, DialogComponent],
+  declarations: [
+    AppComponent,
+    ListaEscolasComponent,
+    DialogComponent,
+    BemVindoComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
