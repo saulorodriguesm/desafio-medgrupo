@@ -1,27 +1,19 @@
-# DesafioMedgrupo
+# Desafio Medgrupo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+O projeto foi gerado com a [Angular CLI](https://github.com/angular/angular-cli) na versão 16.1.0.
+MVP desenvolvido com o intuito de mostrar as execuções de um CRUD simples utilizando metodologias conhecidas no Angular. Optei por desenvolver um CRUD completo na listagem das escolas ao invés de fazer duas tabelas de consulta, dessa forma consigo mostrar mais skills e uma diversidade maior de conhecimento.
 
-## Development server
+## Para rodar o projeto localmente
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Antes de tudo, é importante que vc rode um `npm i` em seu terminal para a instação de todas as libs utilizadas.
 
-## Code scaffolding
+Após, é indispensável que você inicie o json-server para que se inicialize o mock criado com os dados das escolas. Rode os seguintes comandos em seu terminal.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> cd src/app/mocks
+> json-server watch db.json
 
-## Build
+Por questões de boas práticas, optei por colocar o arquivo de mock dentro da pasta app, por isso necessário o primeiro comando para encontrar o arquivo db.json.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Com o json-server iniciado, rode o comando `ng serve`. O projeto será rodado no localhost:4200
